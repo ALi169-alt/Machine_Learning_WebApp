@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Statistics</h2>
+{% if message %}
+    <p>{{ message }}</p>
+{% else %}
+    <div class="element-wrapper">
+        <div class="element">
+            <h3>Data Info</h3>
+            <pre class="data-shape-element">{{ info }}</pre>
+        </div>
+        <div class="element">
+            <h3>Data Shape</h3>
+            <div class="data-shape-wrapper">
+                <div class="data-shape-element">
+                    <p> Number of Rows </p>
+                    <div>{{ shape.0 }}</div>
+                </div>
+                <div class="data-shape-element">
+                    <p> Number of Columns </p>
+                    <div>{{ shape.1 }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="table-wrapper element">
+            <h3>Data Head</h3>
+            {{ head|safe }}
+        </div>
+        <div class="table-wrapper element">
+            <h3>Data describe</h3>
+            {{ statistics|safe }}
+        </div>
+        
+    </div>
+    <div class="element matrix">
+      <h3>Correlation Matrix Heatmap</h3>
+      <img src="data:image/png;base64,{{ heatmap_base64 }}" alt="Correlation Matrix Heatmap">
+  </div>
+{% endif %}
+{% endblock %}
