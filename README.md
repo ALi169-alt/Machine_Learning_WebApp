@@ -1,3 +1,21 @@
+<p align="center">
+    <a href="https://www.djangoproject.com/" target="_blank">
+        <img src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" width="400" alt="Django Logo">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://pypi.org/project/Django/">
+        <img src="https://img.shields.io/pypi/dm/Django.svg" alt="Total Downloads">
+    </a>
+    <a href="https://pypi.org/project/Django/">
+        <img src="https://img.shields.io/pypi/v/Django.svg" alt="Latest Stable Version">
+    </a>
+    <a href="https://www.djangoproject.com/foundation/">
+        <img src="https://img.shields.io/pypi/l/Django.svg" alt="License">
+    </a>
+</p>
+
 <h1>Machine Learning Project</h1>
 
 <p>Cette application web basée sur Django sert de plateforme conviviale pour effectuer des tâches essentielles d'apprentissage automatique. Le projet permet aux utilisateurs de télécharger des ensembles de données, d'analyser des données statistiques et d'appliquer divers algorithmes d'apprentissage automatique.</p>
